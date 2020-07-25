@@ -1,2 +1,2 @@
 # dotfiles
-Hosting dotfiles for neovim and other configs to be added
+Hosting dotfiles for new configs and installs. 
