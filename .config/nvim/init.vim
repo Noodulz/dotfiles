@@ -6,8 +6,8 @@ set clipboard=unnamedplus
 set tabstop=3
 set autoindent
 
+" Plugins Section 
 call plug#begin('~/.local/share/nvim/site/pack/git-plugins/start')
-" Plugins Section
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ayu-theme/ayu-vim'
 Plug 'scrooloose/nerdtree'
