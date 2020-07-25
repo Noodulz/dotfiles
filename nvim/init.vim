@@ -1,1 +1,0 @@
-/home/noodles/.config/nvim/init.vim
