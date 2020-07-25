@@ -16,6 +16,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/seoul256.vim'
+Plug 'hardcoreplayers/dashboard-nvim'
+Plug 'liuchengxu/vim-clap'
 call plug#end()
 
 " Config Section
@@ -66,3 +68,7 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l 
+
+" Dashboard
+let g:dashboard_default_executive='fzf.vim'
+g:dashboard_default_header=commicgirl16
