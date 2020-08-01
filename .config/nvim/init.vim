@@ -10,6 +10,7 @@ set autoindent
 call plug#begin('~/.local/share/nvim/site/pack/git-plugins/start')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ayu-theme/ayu-vim'
+
 Plug 'exitface/synthwave.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -19,11 +20,11 @@ Plug 'artanikin/vim-synthwave84'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/seoul256.vim'
+Plug 'artanikin/vim-synthwave84'
 Plug 'hardcoreplayers/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
 Plug 'gilgigilgil/anderson.vim'
 call plug#end()
-
 " Config Section
 set background=dark
 color synthwave
