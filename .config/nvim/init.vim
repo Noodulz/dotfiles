@@ -10,22 +10,30 @@ set autoindent
 call plug#begin('~/.local/share/nvim/site/pack/git-plugins/start')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ayu-theme/ayu-vim'
+Plug 'exitface/synthwave.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'artanikin/vim-synthwave84'
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
 Plug 'junegunn/seoul256.vim'
 Plug 'hardcoreplayers/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
+Plug 'gilgigilgil/anderson.vim'
 call plug#end()
 
 " Config Section
-if (has("termguicolors"))
-	set termguicolors
+set background=dark
+color synthwave
+
+if has('termguicolors')
+  set termguicolors " 24-bit terminal
+else
+  let g:synthwave_termcolors=256 " 256 color mode
 endif
-syntax enable
-colorscheme seoul256
+let g:airline_theme='synthwave'
 
 " File Explorer NERDTree
 let g:NERDTreeShowHidden = 1
@@ -71,4 +79,4 @@ nnoremap <A-l> <C-w>l
 
 " Dashboard
 let g:dashboard_default_executive='fzf.vim'
-g:dashboard_default_header=commicgirl16
+let g:dashboard_default_header='commicgirl13'
